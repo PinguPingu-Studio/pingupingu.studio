@@ -44,18 +44,20 @@
         <h2>Custom Requests</h2>
         <p>Fill out the form below to request a custom illustration.</p>
         <p>아래 양식을 작성하여 맞춤 일러스트를 요청하세요.</p>
-        <form action="#" method="POST">
-            <label for="name">Your Name:</label>
+        <form action="https://formsubmit.co/pingupingu.studio@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="새로운 맞춤 일러스트 요청!">
+            <label for="name">Name(이름):</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email:</label>
+            <label for="email">Email(이메일):</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="details">Details:</label>
+            <label for="details">Details(요청 상세 내용):</label>
             <textarea id="details" name="details" required></textarea>
 
-            <button type="submit">Submit Request</button>
+            <button type="submit">Submit(제출)</button>
         </form>
+
     </section>
 
     <section id="contact">
