@@ -1,0 +1,38 @@
+# Site settings
+title: PinguPingu Studio
+email: contact@pingupingu.studio
+description: >-
+  Welcome to PinguPingu Studio – A place where creativity meets art. 
+  Explore our shop, request custom illustrations, and get inspired.
+baseurl: "" # Leave empty unless hosting under a subpath
+url: "https://pingupingu.studio" # Your custom domain
+
+# Navigation links
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Build settings
+theme: null # Remove default Jekyll theme since we're using a custom layout
+plugins:
+  - jekyll-feed # RSS Feed
+  - jekyll-sitemap # SEO-friendly sitemap
+  - jekyll-seo-tag # Adds SEO metadata to pages
+
+# Exclude files from processing (to avoid unnecessary builds)
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - node_modules/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Custom defaults for pages
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

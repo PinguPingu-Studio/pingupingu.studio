@@ -1,0 +1,77 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinguPingu Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>PinguPingu Studio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#custom">Custom Requests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to PinguPingu Studio</h2>
+        <p>Beautiful illustrations made with love. Browse our shop or request a custom piece.</p>
+    </section>
+
+    <section id="shop">
+        <h2>Shop</h2>
+        <div class="gallery">
+            <div class="art-item">
+                <img src="illustration1.jpg" alt="Illustration 1">
+                <p>Illustration Title</p>
+            </div>
+            <div class="art-item">
+                <img src="illustration2.jpg" alt="Illustration 2">
+                <p>Illustration Title</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="custom">
+        <h2>Custom Requests</h2>
+        <p>Fill out the form below to request a custom illustration.</p>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at: <a href="mailto:contact@pingupingu.studio">contact@pingupingu.studio</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PinguPingu Studio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
