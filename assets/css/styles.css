@@ -98,7 +98,6 @@ p {
 
 .view-more {
   display: block;
-  margin: 20px auto;
   background-color: #ff70a6;
   color: white;
   padding: 10px 20px;
@@ -109,6 +108,9 @@ p {
   font-family: "DungGeunMo", sans-serif;
   font-weight: normal;
   text-align: center;
+  height: fit-content;
+  transform: scale(0.8);
+  margin-top: auto;
 }
 
 .view-more:hover {
