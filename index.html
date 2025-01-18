@@ -52,14 +52,15 @@
             <label for="email">이메일:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="kakaotalk">카카오톡 ID:</label>
-            <input type="text" id="kakaotalk" name="kakaotalk" required>
+            <label for="kakao">카카오톡 ID:</label>
+            <input type="text" id="kakao" name="kakao" required>
 
-            <label for="details">상세 내용:</label>
+            <label for="details">요청 상세 내용:</label>
             <textarea id="details" name="details" required></textarea>
 
-            <button type="submit">제출</button>
+            <button type="submit">요청 제출</button>
         </form>
+
 
 
     </section>
@@ -77,20 +78,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            emailjs.init("ar7G-e3qjOUplramE"); // Replace with your EmailJS Public Key
+            emailjs.init("ar7G-e3qjOUplramE"); // Replace with your actual EmailJS Public Key
 
             document.getElementById("contact-form").addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent form from reloading the page
+                event.preventDefault(); // Prevent page from reloading
 
                 emailjs.sendForm("service_od3ldvs", "template_36z68bu", this)
                     .then(function (response) {
-                        alert("Successfully submitted! 요청이 성공적으로 제출되었습니다! 🎉");
+                        alert("요청이 성공적으로 제출되었습니다! 🎉");
+                        document.getElementById("contact-form").reset(); // Clear form after submission
                     }, function (error) {
                         alert("오류 발생: " + JSON.stringify(error));
                     });
             });
         });
     </script>
+
 
 </body>
 
