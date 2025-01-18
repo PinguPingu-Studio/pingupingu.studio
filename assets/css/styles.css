@@ -119,6 +119,29 @@ p {
   background-color: #ffafcc;
 }
 
+.notice-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.notice-btn {
+  background-color: #ff70a6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: "DungGeunMo", sans-serif;
+  font-weight: normal;
+}
+
+.notice-btn:hover {
+  background-color: #ffafcc;
+}
+
 form {
   background-color: #fff5e1;
   padding: 20px;
