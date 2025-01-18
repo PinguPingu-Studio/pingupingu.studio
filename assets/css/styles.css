@@ -9,6 +9,7 @@
 }
 
 body {
+  padding-top: 80px;
   font-family: "DungGeunMo", "Comic Sans MS", cursive, sans-serif !important;
   background-color: #fff8f0;
   color: #555;
@@ -126,6 +127,8 @@ form textarea#details {
 }
 
 button {
+  display: block;
+  margin-left: auto;
   background-color: #ff70a6;
   color: white;
   padding: 10px 20px;
@@ -146,4 +149,30 @@ footer {
   padding: 10px;
   font-size: 0.9em;
   border-top: 5px solid #ffafcc;
+}
+
+/* Shop CSS */
+
+#shop {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.art-item {
+  background-color: #feece2;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.art-item img {
+  width: 200px;
+  border-radius: 10px;
 }
