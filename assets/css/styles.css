@@ -169,29 +169,3 @@ footer {
   font-size: 0.9em;
   border-top: 5px solid #ffafcc;
 }
-
-/* Shop CSS */
-
-#shop {
-  text-align: center;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.art-item {
-  background-color: #feece2;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.art-item img {
-  width: 200px;
-  border-radius: 10px;
-}
