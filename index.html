@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>PinguPingu Studio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
 <body>
@@ -33,24 +32,23 @@
         <div class="gallery">
             <div class="art-item">
                 <img src="assets/images/illustration1.png" alt="Illustration 1">
-
             </div>
             <div class="art-item">
                 <img src="assets/images/illustration2.png" alt="Illustration 2">
-
             </div>
-            <a href="https://pingupingu-studio.github.io/pingupingu.studio/portfolio" class="view-more">View More</a>
+        </div>
+        <div class="view-btn-layout">
+            <a href="portfolio.html" class="view-more">View More</a>
+        </div>
         </div>
     </section>
 
     <section id="notice">
         <h2>Notice</h2>
-        <a class="notice-buttons">
-            <a href="https://pingupingu-studio.github.io/pingupingu.studio/normal-type"><button class="notice-btn">일반
-                    타입</button></a>
-            <a href="https://pingupingu-studio.github.io/pingupingu.studio/group-type"><button class="notice-btn">오마카세
-                    타입</button></a>
-            </div>
+        <div class="notice-buttons">
+            <a href="normal-type.html" class="notice-btn">일반 타입</a>
+            <a href="group-type.html" class="notice-btn">오마카세 타입</a>
+        </div>
     </section>
 
     <section id="custom">
@@ -71,9 +69,6 @@
 
             <button type="submit">요청 제출</button>
         </form>
-
-
-
     </section>
 
     <section id="contact">
@@ -85,19 +80,17 @@
         <p>&copy; 2025 PinguPingu Studio. All rights reserved.</p>
     </footer>
 
-    <!-- for the submit form button -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            emailjs.init("ar7G-e3qjOUplramE"); // Replace with your actual EmailJS Public Key
+            emailjs.init("ar7G-e3qjOUplramE");
 
             document.getElementById("contact-form").addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent page from reloading
-
+                event.preventDefault();
                 emailjs.sendForm("service_od3ldvs", "template_36z68bu", this)
-                    .then(function (response) {
+                    .then(function () {
                         alert("요청이 성공적으로 제출되었습니다! 🎉");
-                        document.getElementById("contact-form").reset(); // Clear form after submission
+                        document.getElementById("contact-form").reset();
                     }, function (error) {
                         alert("오류 발생: " + JSON.stringify(error));
                     });
@@ -105,19 +98,17 @@
         });
     </script>
 
-    <!-- for the smooth scrolling in the full page -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll("nav ul li a").forEach(anchor => {
                 anchor.addEventListener("click", function (event) {
-                    event.preventDefault(); // Prevent default jump
-                    const targetId = this.getAttribute("href").substring(1); // Get the section ID
+                    event.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
                     const targetElement = document.getElementById(targetId);
                     if (targetElement) {
-                        const offset = 215; // Adjust based on header height
-                        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                        const offset = document.querySelector("header").offsetHeight + 20;
                         window.scrollTo({
-                            top: elementPosition - offset,
+                            top: targetElement.offsetTop - offset,
                             behavior: "smooth"
                         });
                     }
@@ -125,8 +116,6 @@
             });
         });
     </script>
-
-
 </body>
 
 </html>

@@ -100,6 +100,17 @@ p {
   border-radius: 10px;
 }
 
+.pf-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.view-btn-layout {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 .view-more {
   display: block;
   background-color: #ff70a6;
@@ -112,6 +123,9 @@ p {
   font-family: "DungGeunMo", sans-serif;
   text-align: center;
   text-decoration: none;
+  margin: 10px 0;
+  width: fit-content;
+  height: auto;
 }
 
 .view-more:hover {
