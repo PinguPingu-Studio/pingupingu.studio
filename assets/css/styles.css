@@ -61,6 +61,12 @@ h2 {
   font-size: 2em;
 }
 
+.msg {
+  text-align: center;
+  color: #ff70a6;
+  font-size: 1.9em;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.6;
