@@ -96,6 +96,25 @@ p {
   border-radius: 10px;
 }
 
+.view-more {
+  display: block;
+  margin: 20px auto;
+  background-color: #ff70a6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: "DungGeunMo", sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.view-more:hover {
+  background-color: #ffafcc;
+}
+
 form {
   background-color: #fff5e1;
   padding: 20px;
