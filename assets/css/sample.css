@@ -18,6 +18,7 @@ body {
 }
 
 #sample {
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
@@ -52,4 +53,46 @@ p {
 
 .masonry-gallery img:hover {
   transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  #sample {
+    max-width: 90%;
+  }
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+  #sample {
+    padding: 15px;
+    max-width: 95%;
+  }
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  #sample {
+    padding: 10px;
+    max-width: 100%;
+  }
+  .masonry-gallery {
+    column-count: 1;
+  }
 }
