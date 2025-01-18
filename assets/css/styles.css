@@ -57,8 +57,8 @@ nav ul li a {
 section {
   scroll-margin-top: 215px;
   padding: 30px 15px;
-  max-width: 100%;
-  width: 60%;
+  max-width: 60%;
+  width: 100%;
   margin: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -243,6 +243,6 @@ footer {
     max-width: 98%;
   }
   form {
-    max-width: 320px;
+    max-width: 300px;
   }
 }
