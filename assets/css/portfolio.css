@@ -1,4 +1,4 @@
-/* PinguPingu Studio - Shop Page Styles */
+/* PinguPingu Studio - Portfolio Page Styles */
 
 @font-face {
   font-family: "DungGeunMo";
@@ -14,32 +14,15 @@ body {
   color: #555;
   text-align: center;
   margin: 0;
-  padding: 0;
-  padding-top: 80px; /* Adjust for fixed header */
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #ffc8dd;
   padding: 20px;
-  border-bottom: 5px solid #ffafcc;
 }
 
-header h1 {
-  color: #6a0572;
-  font-size: 2.5em;
-}
-
-.shop-container {
+#portfolio {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
   background-color: #fde2e4;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,46 +31,25 @@ h2 {
   font-size: 2.5em;
 }
 
-.shop-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-.shop-item {
-  background-color: #feece2;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 280px;
+.masonry-gallery {
+  column-count: 3;
+  column-gap: 15px;
+  padding: 10px;
 }
 
-.shop-item img {
+.masonry-gallery img {
   width: 100%;
+  margin-bottom: 15px;
   border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.shop-item p {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.buy-button {
-  display: inline-block;
-  background-color: #ff70a6;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: "DungGeunMo", sans-serif;
-  text-decoration: none;
-}
-
-.buy-button:hover {
-  background-color: #ffafcc;
+.masonry-gallery img:hover {
+  transform: scale(1.05);
 }
