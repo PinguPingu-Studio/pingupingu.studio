@@ -38,7 +38,7 @@
                 <img src="assets/images/illustration2.jpg" alt="Illustration 2">
                 <p>Illustration Title</p>
             </div>
-            <a href="/shop.html" class="view-more">View More</a>
+            <a href="https://pingupingu-studio.github.io/pingupingu.studio/shop" class="view-more">View More</a>
         </div>
     </section>
 
@@ -74,7 +74,7 @@
         <p>&copy; 2025 PinguPingu Studio. All rights reserved.</p>
     </footer>
 
-
+    <!-- for the submit form button -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -90,6 +90,27 @@
                     }, function (error) {
                         alert("오류 발생: " + JSON.stringify(error));
                     });
+            });
+        });
+    </script>
+
+    <!-- for the smooth scrolling in the full page -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("nav ul li a").forEach(anchor => {
+                anchor.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default jump
+                    const targetId = this.getAttribute("href").substring(1); // Get the section ID
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        const offset = 100; // Adjust based on header height
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                        window.scrollTo({
+                            top: elementPosition - offset,
+                            behavior: "smooth"
+                        });
+                    }
+                });
             });
         });
     </script>
