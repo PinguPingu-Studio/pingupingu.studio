@@ -103,7 +103,7 @@
                     const targetId = this.getAttribute("href").substring(1); // Get the section ID
                     const targetElement = document.getElementById(targetId);
                     if (targetElement) {
-                        const offset = 100; // Adjust based on header height
+                        const offset = 215; // Adjust based on header height
                         const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
                         window.scrollTo({
                             top: elementPosition - offset,
