@@ -120,7 +120,7 @@ p {
 
 .notice-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
   margin-top: 20px;
 }
@@ -135,7 +135,7 @@ p {
   font-size: 1.2em;
   font-family: "DungGeunMo", sans-serif;
   font-weight: normal;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .notice-btn:hover {
