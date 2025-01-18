@@ -34,13 +34,13 @@ h2 {
 h3 {
   color: #6a0572;
   font-size: 1.8em;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 p,
 ul {
-  font-size: 1.2em;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 ul {
@@ -49,10 +49,10 @@ ul {
 }
 
 ul li {
-  background: #ffafcc;
+  background: #fa9ec0;
   color: white;
   padding: 10px;
-  margin: 5px 0;
+  margin: 5px 10px;
   border-radius: 10px;
   font-weight: bold;
 }
