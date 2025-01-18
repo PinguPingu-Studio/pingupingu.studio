@@ -69,7 +69,7 @@ h2 {
 .msg {
   text-align: center;
   color: #ff70a6;
-  font-size: 1.9em;
+  font-size: 1.6em;
 }
 
 p {
@@ -111,7 +111,7 @@ form label {
 
 form input,
 form textarea {
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 8px;
   margin-top: 5px;
   margin-bottom: 15px;
@@ -119,6 +119,10 @@ form textarea {
   border-radius: 5px;
   font-family: inherit;
   background-color: #ffe6e6;
+}
+
+form textarea#details {
+  height: 150px;
 }
 
 button {
